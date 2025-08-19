@@ -14,7 +14,7 @@ Welcome to my collection of dotfiles, crafted for my daily workflow with **Neovi
    - Install [LazyVim](https://lazyvim.github.io/installation).
    - Clone this repo:
      ```bash
-     git clone https://github.com/your-username/balti-dotfiles.git ~/.config/nvim
+     git clone https://github.com/sohail900/dotfiles.git ~/.config/nvim
      ```
    - Run `nvim` to sync plugins automatically.
 2. **tmux**:
