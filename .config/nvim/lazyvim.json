@@ -1,8 +1,8 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.ai.codeium",
     "lazyvim.plugins.extras.ai.supermaven",
     "lazyvim.plugins.extras.coding.nvim-cmp",
+    "lazyvim.plugins.extras.editor.overseer",
     "lazyvim.plugins.extras.lang.prisma",
     "lazyvim.plugins.extras.lang.rust"
   ],

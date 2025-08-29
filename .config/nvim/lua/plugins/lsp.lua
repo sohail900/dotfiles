@@ -10,7 +10,7 @@ return {
         "tailwindcss-language-server",
         "typescript-language-server",
         "css-lsp",
-        "nomicfoundation-solidity-language-server", -- Added
+        "nomicfoundation-solidity-language-server",
       })
     end,
   },
@@ -58,9 +58,7 @@ return {
             },
           },
         },
-        html = {},
         lua_ls = {
-          -- enabled = false,
           single_file_support = true,
           settings = {
             Lua = {
@@ -92,7 +90,6 @@ return {
               },
               diagnostics = {
                 disable = { "incomplete-signature-doc", "trailing-space" },
-                -- enable = false,
                 groupSeverity = {
                   strong = "Warning",
                   strict = "Warning",
@@ -124,9 +121,9 @@ return {
             },
           },
         },
-        solidity_ls_nomicfoundation = { -- Added
+        solidity_ls_nomicfoundation = {
           root_dir = require("lspconfig.util").root_pattern("foundry.toml"),
-          timeout_ms = 20000, -- increase timeout for solidity lsp
+          timeout_ms = 20000,
         },
       },
       setup = {},
@@ -137,7 +134,6 @@ return {
     dependencies = { "hrsh7th/cmp-emoji" },
     opts = function(_, opts)
       table.insert(opts.sources, { name = "emoji" })
-
       opts.completion = opts.completion or {}
       opts.completion.autocomplete = { require("cmp.types").cmp.TriggerEvent.TextChanged }
     end,

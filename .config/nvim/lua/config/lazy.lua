@@ -18,17 +18,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = {
-    {
-      "LazyVim/LazyVim",
-      import = "lazyvim.plugins",
-      opts = {
-        colorscheme = "sonokai",
-        news = {
-          lazyvim = true,
-          neovim = true,
-        },
-      },
-    },
+    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     --    { import = "lazyvim.plugins.extras.lsp.none-ls" },
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.json" },

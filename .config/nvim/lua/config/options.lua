@@ -31,6 +31,17 @@ vim.opt.path:append({ "**" })
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"
-
--- Add asterisks in block comments
 vim.opt.formatoptions:append({ "r" })
+vim.g.clipboard = {
+  name = "xclip",
+  copy = {
+    ["+"] = "xclip -quiet -i -selection clipboard",
+    ["*"] = "xclip -quiet -i -selection primary",
+  },
+  paste = {
+    ["+"] = "xclip -o -selection clipboard",
+    ["*"] = "xclip -o -selection primary",
+  },
+  cache_enabled = true,
+}
+vim.opt.clipboard = { "unnamed", "unnamedplus" }

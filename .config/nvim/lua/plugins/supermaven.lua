@@ -14,4 +14,3 @@ return {
     end,
   },
 }
--- this is the default config for supermaven
