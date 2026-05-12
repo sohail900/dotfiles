@@ -1,4 +1,4 @@
-# 🛠️ Balti's Dotfiles
+# 🛠️ Dotfiles
 
 Welcome to my collection of dotfiles, crafted for my daily workflow with **Neovim** and **tmux**. This repo is a living project, regularly updated as I refine my setup. Feel free to explore and adapt anything useful for your own environment! 🌟
 
